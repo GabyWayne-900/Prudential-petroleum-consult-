@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil Spill Prevention Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Oil Spill Prevention Dashboard</h1>
+    </header>
+
+    <main>
+        <!-- Sensor Data Display Section -->
+        <section class="sensor-data">
+            <div class="sensor">
+                <h3>Pressure: <span id="pressure">0</span> PSI</h3>
+            </div>
+            <div class="sensor">
+                <h3>Temperature: <span id="temperature">0</span> °C</h3>
+            </div>
+            <div class="sensor">
+                <h3>Flow Rate: <span id="flowRate">0</span> L/min</h3>
+            </div>
+        </section>
+
+        <!-- Chart Section -->
+        <section class="chart-container">
+            <canvas id="sensorChart"></canvas>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
